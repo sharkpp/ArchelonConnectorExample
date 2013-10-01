@@ -7,7 +7,7 @@ class Controller_Api_v1 extends \Controller_Rest
 	// GETメソッド
 	public function get_hoge($id = null)
 	{
-		\Config::load('dneo::config.db', 'dneo');
+		\Config::load('example::config.db', 'example');
 
 		$api_key = \Input::get('key');
 
@@ -39,7 +39,7 @@ class Controller_Api_v1 extends \Controller_Rest
 	// POSTメソッド
 	public function post_fuga($id = null)
 	{
-		\Config::load('dneo::config.db', 'dneo');
+		\Config::load('example::config.db', 'example');
 
 		$api_key = \Input::post('key', \Input::get('key'));
 
